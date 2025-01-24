@@ -27,7 +27,7 @@ export default {
         {
           role: "system",
           content:
-            "You are a helpful assistant that gives gardening recommendations based on location, season and effort.",
+            "Give the user suggestions as to what plants they should plant in their garden based on the parameters location, current season, and effort. List five plants suitable for the user’s lifestyle, and appropriate planting instructions for each type of plant",
         },
       ],
     };

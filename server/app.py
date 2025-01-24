@@ -12,6 +12,8 @@ def home():
 @app.route("/llm")
 def llm():
     prompt = request.args.get("prompt", "")
+    if not prompt:
+        return {"error": "No prompt provided"}
     response = requests.get(f"https://calm-glade-e7c9.julianubico.workers.dev/?prompt={prompt}")
     return response.json()
 
